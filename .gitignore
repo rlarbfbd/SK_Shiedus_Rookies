@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Generated models
+*.pth
+*.pt
+*.h5
+
+setting.ipynb
+welcome.txt
+2*노트정리.txt
