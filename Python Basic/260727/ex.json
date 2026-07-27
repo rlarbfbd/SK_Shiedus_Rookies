@@ -1,0 +1,92 @@
+{
+  "$schema_description": "JSON (JavaScript Object Notation) 데이터 구조를 설명하기 위한 예제 파일입니다.",
+  "document_info": {
+    "title": "JSON 데이터 구조 안내서",
+    "version": "1.0",
+    "created_date": "2026-07-27",
+    "author": "Gemini Assistant",
+    "file_format": "JSON"
+  },
+  "supported_data_types": {
+    "string": {
+      "description": "문자열 (String)",
+      "example": "반드시 큰따옴표(\"\")로 감싸야 합니다.",
+      "value": "안녕하세요, JSON입니다!"
+    },
+    "number_integer": {
+      "description": "정수형 숫자 (Integer)",
+      "example": "따옴표 없이 숫자를 적습니다.",
+      "value": 2026
+    },
+    "number_float": {
+      "description": "실수형 숫자 (Float)",
+      "example": "소수점을 포함할 수 있습니다.",
+      "value": 98.6
+    },
+    "boolean_true": {
+      "description": "불리언 참 (Boolean True)",
+      "example": "소문자로 true 작성",
+      "value": true
+    },
+    "boolean_false": {
+      "description": "불리언 거짓 (Boolean False)",
+      "example": "소문자로 false 작성",
+      "value": false
+    },
+    "null_value": {
+      "description": "null 값 (비어있음/존재하지 않음)",
+      "example": "소문자로 null 작성",
+      "value": null
+    }
+  },
+  "structural_elements": {
+    "object_example": {
+      "description": "객체 (Object) - 중괄호 {} 안에 키-값(Key-Value) 쌍의 집합으로 표현됩니다.",
+      "nested_property": {
+        "sub_key": "서브 값",
+        "depth": 2
+      }
+    },
+    "array_of_values": {
+      "description": "단순 배열 (Array of Primitives) - 대괄호 [] 안에 순서가 있는 값의 목록입니다.",
+      "items": [
+        "사과",
+        "바나나",
+        "오렌지",
+        10,
+        true
+      ]
+    },
+    "array_of_objects": {
+      "description": "객체 배열 (Array of Objects) - 실무에서 가장 흔히 사용되는 목록 구조입니다.",
+      "users": [
+        {
+          "user_id": 101,
+          "name": "홍길동",
+          "email": "gildong@example.com",
+          "roles": [
+            "admin",
+            "developer"
+          ],
+          "is_active": true
+        },
+        {
+          "user_id": 102,
+          "name": "김철수",
+          "email": "chulsoo@example.com",
+          "roles": [
+            "user"
+          ],
+          "is_active": false
+        }
+      ]
+    }
+  },
+  "json_syntax_rules": [
+    "1. Key(키)는 항상 큰따옴표(\"\")로 감싸야 합니다.",
+    "2. 문자열 Value(값)도 항상 큰따옴표(\"\")를 사용해야 합니다. (작은따옴표 '' 사용 불가)",
+    "3. 마지막 항목 뒤에는 쉼표(Trailing Comma)를 붙이지 않습니다.",
+    "4. 주석(// 또는 /* */)은 표준 JSON 규격에서 허용되지 않습니다.",
+    "5. 대소문자를 구분합니다 (true, false, null은 반드시 소문자)."
+  ]
+}
