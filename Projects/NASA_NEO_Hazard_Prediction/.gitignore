@@ -29,3 +29,8 @@ env/
 
 # Windows
 Thumbs.db
+
+# Raw API data
+data/raw/*.json
+
+*.png
