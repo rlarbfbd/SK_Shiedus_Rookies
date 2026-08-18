@@ -161,8 +161,8 @@ NASA_NEO_Hazard_Prediction/
 ## Project Status
 
 - [x] 프로젝트 기획
-- [ ] 프로젝트 구조 설계
-- [ ] NASA API 연동
+- [x] 프로젝트 구조 설계
+- [x] NASA API 연동
 - [ ] 데이터 수집
 - [ ] 데이터 전처리
 - [ ] 탐색적 데이터 분석(EDA)
@@ -234,7 +234,7 @@ This project is intended for educational purposes.
 | :--- | :------- | :----- |
 | 2026-08-13 | 프로젝트 기획 | 프로젝트 기획 |
 | 2026-08-13 | 프로젝트 구조 설계 | 프로젝트 구조 생성 |
-| - | NASA NeoWs API 연동 | - |
+| 2026-08-18 | NASA NeoWs API 연결 테스트 및 JSON 구조 확인 | NASA NeoWs API 연결 테스트 구현 |
 | - | 데이터 수집 모듈 구현 | - |
 | - | 데이터 저장(CSV) 구현 | - |
 | - | 데이터 전처리 | - |
