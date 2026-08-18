@@ -60,29 +60,44 @@ NASA Open API(NeoWs)를 활용하여 근지구 소행성(Near Earth Object, NEO)
 ```text
 NASA_NEO_Hazard_Prediction/
 │
+├── app/
+│   └── streamlit_app.py          # Streamlit 애플리케이션
+│
 ├── data/
-│   ├── raw/                  # 원본 데이터
-│   └── processed/            # 전처리 데이터
+│   ├── raw/                      # 원본 데이터
+│   └── processed/                # 전처리 데이터
 │
-├── notebooks/                # 실험 및 분석
+├── docs/                         # 프로젝트 문서
+│   ├── NeoWs_Columns.md          # API 컬럼 정리
+│   ├── Development_Log.md        # 개발 기록
+│   ├── EDA.md                    # 탐색적 데이터 분석
+│   ├── Model_Evaluation.md       # 모델 성능 비교
+│   └── Project_Notes.md          # 학습 및 참고 내용
 │
-├── src/                      # 프로젝트 소스 코드
+├── models/                       # 학습된 모델
+│
+├── notebooks/                    # 실험 및 분석
+│   ├── 01_API_Test.ipynb
+│   ├── 02_Data_Collection.ipynb
+│   ├── 03_EDA.ipynb
+│   ├── 04_Preprocessing.ipynb
+│   ├── 05_Modeling.ipynb
+│   └── 06_Streamlit_Test.ipynb
+│
+├── results/                      # 결과 및 시각화
+│   ├── figures/
+│   └── reports/
+│
+├── src/                          # 프로젝트 소스 코드
 │   ├── api.py
 │   ├── preprocess.py
 │   ├── train.py
 │   ├── predict.py
 │   └── utils.py
 │
-├── models/                   # 학습된 모델
-│
-├── results/                  # 결과 및 시각화
-│
-├── app/
-│   └── streamlit_app.py      # Streamlit 애플리케이션
-│
+├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ---
@@ -223,26 +238,6 @@ https://api.nasa.gov/
 ## License
 
 This project is intended for educational purposes.
-
----
-
-## Development Log
-
-프로젝트 진행 과정과 학습 내용을 기록합니다.
-
-| Date | Progress | Commit |
-| :--- | :------- | :----- |
-| 2026-08-13 | 프로젝트 기획 | 프로젝트 기획 |
-| 2026-08-13 | 프로젝트 구조 설계 | 프로젝트 구조 생성 |
-| 2026-08-18 | NASA NeoWs API 연결 테스트 및 JSON 구조 확인 | NASA NeoWs API 연결 테스트 구현 |
-| - | 데이터 수집 모듈 구현 | - |
-| - | 데이터 저장(CSV) 구현 | - |
-| - | 데이터 전처리 | - |
-| - | 탐색적 데이터 분석(EDA) | - |
-| - | 머신러닝 모델 구현 | - |
-| - | 모델 성능 비교 | - |
-| - | Streamlit 대시보드 구현 | - |
-| - | 프로젝트 문서화 | - |
 
 ---
 
